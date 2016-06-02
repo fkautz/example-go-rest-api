@@ -69,7 +69,7 @@ func wsHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// Modified from github.com/websocket/examples/echo
+// Modified from github.com/gorilla/websocket/examples/echo
 func echoHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl.Execute(w, "ws://"+r.Host+"/ws/time")
 }
